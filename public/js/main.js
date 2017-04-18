@@ -31,9 +31,9 @@ function addMessage(body, title) {
 
   var postData = {
     author: author,
-    body: body,
+    authorPic: authorPic,
     title: title,
-    authorPic: authorPic
+    body: body
   };
 
   var newPostKey = firebase.database().ref().child('stream').push().key;
