@@ -1,4 +1,4 @@
-# DemoWebApp
+# Database Web App
 
 Check it out at: https://ancient-forest-87393.herokuapp.com/
 
