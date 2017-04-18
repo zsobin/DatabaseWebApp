@@ -31,5 +31,4 @@ IV. Make it your own! Here are some ideas to get started with:
   - Add a button to each post
   - Use javascript and jQuery to monitor when someone clicks the button.
   - When someone does click the "like" button, use the post's key to update a "likes" counter on the object already saved in firebase. To keep track of the key when the "onClick" handler is called, check out something in javascript called "bind". To update a field in firebase, your function will look VERY similar to 'addMessage', except using ".update(postData)" instead of ".set(postData)".
-- The personal website app ccccccgiddijdhcrehgigfftkgruvtrvtjcbtltndcrr
-uses routing to help change urls to show different pages. Try adding an "about the creator" page to your web app
+- The personal website app uses routing to help change urls to show different pages. Try adding an "about the creator" page to your web app
