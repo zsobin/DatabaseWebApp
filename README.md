@@ -2,6 +2,8 @@
 
 Check it out at: https://ancient-forest-87393.herokuapp.com/
 
+Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
+
 The files that have changed are public/js/main.js, views/pages/index.ejs, and views/partials/head.ejs.
 
 I. Get Firebase up and running
