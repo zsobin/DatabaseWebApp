@@ -17,11 +17,11 @@ II. Hook up the API Key
   2) Then run `heroku config:get API_KEY -s >> .env`. This way you can use API_KEY in your local environment and on heroku without actually having it in your code. Bots continuously scrape github looking for apikeys to abuse!
 
 III. Update the rest of your code!
-  3) Update your index.ejs to add the new html that we'll need for the form and for displaying posts
-  4) Update your main.js with the bottom 2 functions used for auth- window.onload and toggleSignIn
-  5) Update your main.js to handle adding and displaying posts- handleMessageFormSubmit, addMessage and initializeStreamListener
-  6) Try it out! Let us know if you get stuck. We can help you debug anything you run into. When you've been successful, go to your app on firebase and check out the database. You'll be able to see all the posts you've successfully stored!
-  7) Really read through the code and try to understand what's going on. Let me know if anything is confusing and I'll happily explain!
+  1) Update your index.ejs to add the new html that we'll need for the form and for displaying posts
+  2) Update your main.js with the bottom 2 functions used for auth- window.onload and toggleSignIn
+  3) Update your main.js to handle adding and displaying posts- handleMessageFormSubmit, addMessage and initializeStreamListener
+  4) Try it out! Let us know if you get stuck. We can help you debug anything you run into. When you've been successful, go to your app on firebase and check out the database. You'll be able to see all the posts you've successfully stored!
+  5) Really read through the code and try to understand what's going on. Let me know if anything is confusing and I'll happily explain!
 
 IV. Make it your own! Here are some ideas to get started with:
 - Make the app look less awful! (my bad)
