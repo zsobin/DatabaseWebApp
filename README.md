@@ -1,6 +1,6 @@
 # Database Web App
 
-Check it out at: https://ancient-forest-87393.herokuapp.com/
+Check it out at: https://hidden-inlet-38981.herokuapp.com/
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
