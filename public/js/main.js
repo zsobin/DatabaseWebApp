@@ -12,6 +12,7 @@ function initializeStreamListener() {
 
   databaseStreamReference.on('value', function(snapshot) {
     var messages = snapshot.val();
+    $('#stream').empty();
 
     if (messages) {
       Object.keys(messages).forEach(function (key) {
@@ -65,7 +66,7 @@ function toggleSignIn() {
   }
 
   //This disables the button until login or logout is successful
-  $('#login-button').attr("disabled",true);
+  $('#login-button').attr("disabled", true);
 }
 
 
