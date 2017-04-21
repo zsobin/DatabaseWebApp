@@ -10,6 +10,7 @@ I. Get Firebase up and running
   1) Login and 'Add Project' on firebase `https://console.firebase.google.com`. Name it whatever you like!
   2) When your database is ready, it should take you to an overview page. We'll come back to this.
   3) In the sidebar, select 'Authentication' and then 'Set up a sign in method'. Select google for now, and flip the switch to 'Enable', and then save.
+  3) While still on the sign in method, scroll down and add your domain to the `OAuth redirect domains` list.
   4) Go back to overview and select 'Add Firebase to your web app'.
   5) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
   6) Copy ONLY the `config` variable from the snippet, and add it you your head.ejs, replacing my config! The only thing you'll need to edit is the apiKey. Copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps.
