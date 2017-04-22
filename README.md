@@ -13,7 +13,7 @@ I. Get Firebase up and running
   3) While still on the sign in method, scroll down and add your app's bas url to the `OAuth redirect domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
   4) Go back to overview and select 'Add Firebase to your web app'.
   5) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
-  6) Add a `head.ejs` file to your project under views/partials, and copy the code from my [head.ejs](https://github.com/zsobin/DatabaseWebApp/blob/master/views/partials/head.ejs)
+  6) Copy the code from my [head.ejs](https://github.com/zsobin/DatabaseWebApp/blob/master/views/partials/head.ejs) file, and use it to replace your code. 
   7) Copy ONLY the `config` variable from the snippet, and add it you your head.ejs, replacing my config! The only thing you'll need to edit is the apiKey. Copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps.
 
 II. Hook up the API Key
