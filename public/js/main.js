@@ -12,7 +12,6 @@ function initializeStreamListener() {
 
   databaseStreamReference.on('value', function(snapshot) {
     var messages = snapshot.val();
-
     $('#stream').empty();
 
     if (messages) {
