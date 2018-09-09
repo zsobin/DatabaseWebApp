@@ -4,7 +4,7 @@ Check it out at: https://hidden-inlet-38981.herokuapp.com/
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
-The files that you're going to change are public/js/main.js, views/pages/index.ejs, and views/partials/head.ejs.
+The files that you're going to change are `project/js/main.js`, `project/html/pages/index.ejs`, and `project/html/helpers/head.ejs`.
 
 I. Get Firebase up and running
   1) Login and 'Add Project' on firebase `https://console.firebase.google.com`. Name it whatever you like!
@@ -13,7 +13,7 @@ I. Get Firebase up and running
   3) While still on the sign in method, scroll down and add your app's bas url to the `OAuth redirect domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
   4) Go back to overview and select 'Add Firebase to your web app'.
   5) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
-  6) Copy the code from my [head.ejs](https://github.com/zsobin/DatabaseWebApp/blob/master/views/partials/head.ejs) file, and use it to replace your code. 
+  6) Copy the code from my [head.ejs](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace your code. 
   7) Copy ONLY the `config` variable from the snippet, and add it you your head.ejs, replacing my config! The only thing you'll need to edit is the apiKey. Copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps.
 
 II. Hook up the API Key
@@ -26,8 +26,8 @@ III. Update the rest of your code!
 _For each of these steps, make sure you reload the page that's running locally to check that it's working_
 
   1) Update your index.ejs to add the new html that we'll need for the form and for displaying posts - CHECK: Can see form on page
-  2) Update your main.js with the bottom 2 functions used for auth- window.onload and toggleSignIn - CHECK: Google login form pops up, able to log in.
-  3) Update your main.js to handle adding and displaying posts- handleMessageFormSubmit, addMessage and initializeStreamListener - CHECK: The post gets displayed!
+  2) Update your `js/main.js` with the bottom 2 functions used for auth- window.onload and toggleSignIn - CHECK: Google login form pops up, able to log in.
+  3) Update your `js/main.js` to handle adding and displaying posts- handleMessageFormSubmit, addMessage and initializeStreamListener - CHECK: The post gets displayed!
   
   4) Try it out! Let us know if you get stuck. We can help you debug anything you run into. When you've been successful, go to your app on firebase and check out the database. You'll be able to see all the posts you've successfully stored!
   5) Really read through the code and try to understand what's going on. Let me know if anything is confusing and I'll happily explain!
