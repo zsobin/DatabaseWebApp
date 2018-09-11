@@ -23,11 +23,10 @@
   <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
 
   <script type="text/javascript">
-    var apiKey = '<%= process.env.API_KEY %>';
-
+  
     //replace this with the config in the code snippet provided from Firebase.
     var config = {
-      apiKey: apiKey, // this is the only exception- make sure you're using the apiKey variable!
+      apiKey: '<%= process.env.API_KEY %>', // this is the only exception- make sure you're using the apiKey variable!
       authDomain: "databaseexample-5d86a.firebaseapp.com",
       databaseURL: "https://databaseexample-5d86a.firebaseio.com",
       projectId: "databaseexample-5d86a",
