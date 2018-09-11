@@ -19,7 +19,7 @@ I. Get Firebase up and running
 II. Hook up the API Key
   1) Leaving API keys in your code is bad- Bots continuously scrape github looking for apikeys to abuse! These next steps help you "hide" your api key from the code that lives on github, but still makes it accessible to be used by your app. 
   2) Run `heroku config:set API_KEY=whateveryourapikeyis` in your terminal (Substituting whateveryourapikeyis for whatever your API key is- found in your firebase config)
-  3) Then run `heroku config:get API_KEY -s >> .env`. This way you can use API_KEY in your local environment and on heroku without actually having it in your code. 
+  3) Then run `heroku config:get API_KEY -s >> .env`. This writes the `API_KEY` variable to a file named `.env` (this file will never be pushed to github/heroku); the webapp will read from this file locally, while on heroku the variable will be pulled from heroku's own configuration system. This way you can use API_KEY in your local environment and on heroku without actually having it in your code. NOTE: if your app is already running you will need to kill the process (ctrl + c) and restart (`heroku local web`)
   4) In your `head.ejs`, replace your api key it with the enviroment variable `apiKey` (example [here](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs#L29)). 
 
 _There are 2 ways to interact with a database. To use Firebase, we're using the API they provided. The other way would be to access a database directly through server-side code. The server-side code would then pass the relevant data to the page that gets rendered. Can you think of why you would choose one over the other? Ask a HubSpotter what they think!_
