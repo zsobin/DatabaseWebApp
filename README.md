@@ -9,12 +9,12 @@ The files that you're going to change are `project/js/main.js`, `project/html/pa
 I. Get Firebase up and running
   1) Login and 'Add Project' on firebase `https://console.firebase.google.com`. Name it whatever you like!
   2) When your database is ready, it should take you to an overview page. We'll come back to this.
-  3) In the sidebar, select 'Authentication' and then 'Set up a sign in method'. Select google for now, and flip the switch to 'Enable', and then save. This will make google the sign-in method to use your web application. _Can you think of why we'd want to make people log in before they can use your app? Ask a hubspotter near you what they think!_
+  3) In the sidebar, select 'Develop' -> 'Authentication' and then 'Set up a sign in method'. Select google for now, and flip the switch to 'Enable', and then save. This will make google the sign-in method to use your web application. _Can you think of why we'd want to make people log in before they can use your app? Ask a hubspotter near you what they think!_
   3) While still on the sign in method, scroll down and add your app's bas url to the `Authorized domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
   4) Go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
   5) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
-  6) Copy the code from my [head.ejs](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace your code. 
-  7) Copy ONLY the `config` variable from the snippet, and add it you your head.ejs, replacing my config! The only thing you'll need to edit is the apiKey. Copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps.
+  6) Copy ALL the code from my [`head.ejs`](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace ALL the code in _your_ `head.ejs` file. 
+  7) Copy ONLY the `config` variable from the snippet, and add it you your head.ejs, replacing my config variable! The only thing you'll need to edit is the apiKey. Copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps.
 
 II. Hook up the API Key
   1) Grab the api key provided by firebase and run `heroku config:set API_KEY=whateveryourapikeyis` in your terminal (Substituting whateveryourapikeyis for whatever your API key is)
