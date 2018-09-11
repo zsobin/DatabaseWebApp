@@ -14,11 +14,13 @@ I. Get Firebase up and running
   4) Go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
   5) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
   6) Copy ALL the code from my [`head.ejs`](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace ALL the code in _your_ `head.ejs` file. 
-  7) Copy ONLY the `config` variable from the code snippet on firebase, and add it you your head.ejs, replacing my `config` variable! The only thing you'll need to edit is the `apiKey`. In your code, copy the one given to you from Firebase, and replace it with the enviroment variable `apiKey` that we'll set up in the next steps. 
+  7) Copy ONLY the `config` variable from the code snippet on firebase, and add it you your head.ejs, replacing my `config` variable! 
 
 II. Hook up the API Key
-  1) Grab the api key provided by firebase and run `heroku config:set API_KEY=whateveryourapikeyis` in your terminal (Substituting whateveryourapikeyis for whatever your API key is)
-  2) Then run `heroku config:get API_KEY -s >> .env`. This way you can use API_KEY in your local environment and on heroku without actually having it in your code. Bots continuously scrape github looking for apikeys to abuse!
+  0) Leaving API keys in your code is bad- Bots continuously scrape github looking for apikeys to abuse! These next steps help you "hide" your api key from the code that lives on github, but still makes it accessible to be used by your app. 
+  2) Run `heroku config:set API_KEY=whateveryourapikeyis` in your terminal (Substituting whateveryourapikeyis for whatever your API key is- found in your firebase config)
+  3) Then run `heroku config:get API_KEY -s >> .env`. This way you can use API_KEY in your local environment and on heroku without actually having it in your code. 
+  2) In your `head.ejs`, replace your api key it with the enviroment variable `apiKey` (example [here](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs#L29)). 
 
 _There are 2 ways to interact with a database. To use Firebase, we're using the API they provided. The other way would be to access a database directly through server-side code. The server-side code would then pass the relevant data to the page that gets rendered. Can you think of why you would choose one over the other? Ask a HubSpotter what they think!_
 
