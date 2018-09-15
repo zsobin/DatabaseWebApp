@@ -21,14 +21,13 @@ I. Get your Firebase database set up
     }
   }
 ```
+  6) While still on the sign in method, scroll down and add your app's base url to the `Authorized domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
   
-  5) While still on the sign in method, scroll down and add your app's base url to the `Authorized domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
-  
-II) Add Firebase to your app
-  5) While still on the firebase website, go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
-  6) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
-  7) Copy ALL the code from my [`head.ejs`](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace ALL the code in _your_ `head.ejs` file. 
-  8) Copy ONLY the `config` variable from the code snippet on firebase, and add it you your head.ejs, replacing my `config` variable! 
+II. Add Firebase to your app
+  1) While still on the firebase website, go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
+  2) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
+  3) Copy ALL the code from my [`head.ejs`](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace ALL the code in _your_ `head.ejs` file. 
+  4) Copy ONLY the `config` variable from the code snippet on firebase, and add it you your head.ejs, replacing my `config` variable! 
 
 III. Hook up the API Key
   1) Leaving API keys in your code is bad- Bots continuously scrape github looking for apikeys to abuse! These next steps help you "hide" your api key from the code that lives on github, but still makes it accessible to be used by your app. 
