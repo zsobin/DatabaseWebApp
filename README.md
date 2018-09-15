@@ -10,8 +10,9 @@ I. Get your Firebase database set up
   1) Login and 'Add Project' on firebase `https://console.firebase.google.com`. Name it whatever you like!
   2) When your database is ready, it should take you to an overview page. We'll come back to this.
   3) In the sidebar, select 'Develop' -> 'Authentication' and then 'Set up a sign in method'. Select google for now, and flip the switch to 'Enable', and then save. This will make google the sign-in method to use your web application. _Can you think of why we'd want to make people log in before they can use your app? Ask a hubspotter near you what they think!_
-  4) In the sidebar, select 'Develop' -> 'Database', you'll see a dropdown next to the title of the page that says 'Cloud Firestore [Beta]'. Switch this to 'Realtime Database'.
-  5) On this same screen, select the top nav item "Rules". Make sure the rules look like this:
+  5) While still on the sign in method, scroll down and add your app's base url to the `Authorized domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
+  5) In the sidebar, select 'Develop' -> 'Database', you'll see a dropdown next to the title of the page that says 'Cloud Firestore [Beta]'. Switch this to 'Realtime Database'.
+  6) On this same screen, select the top nav item "Rules". Make sure the rules look like this:
 
 ```
   {
@@ -21,7 +22,6 @@ I. Get your Firebase database set up
     }
   }
 ```
-  6) While still on the sign in method, scroll down and add your app's base url to the `Authorized domains` list (in my case, I added ` hidden-inlet-38981.herokuapp.com`). This essentially gives your app permission to use the database. 
   
 II. Add Firebase to your app
   1) While still on the firebase website, go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
