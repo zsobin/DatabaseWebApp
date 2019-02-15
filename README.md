@@ -25,7 +25,7 @@ I. Get your Firebase database set up
   
 II. Add Firebase to your app
   1) While still on the firebase website, go back to overview and select the angle brackets under 'Get started by adding Firebase to your app'.
-  2) You should see a bunch of code pop up. This is what you'll add to your app to hook it up to Firebase!
+  2) You should see a bunch of code pop up. You'll use the `config` object in a moment.
   3) Copy ALL the code from my [`head.ejs`](https://github.com/zsobin/DatabaseWebApp/blob/master/project/html/helpers/head.ejs) file, and use it to replace ALL the code in _your_ `head.ejs` file. 
   4) Copy ONLY the `config` variable from the code snippet on firebase, and add it you your head.ejs, replacing my `config` variable! 
 
